@@ -31,15 +31,18 @@ $(document).ready(function(){
 
 		var progress = $(this).attr('progress');
 		$(this).css('width',progress);
-		if(progress>'75%' | progress==='100%'){
+
+		var prog_val = parseInt(progress.substring(0, progress.length-1));
+
+		if(prog_val > 75){
 			console.log("hello");
-			$(this).css('background-color','#49ff28');
+			$(this).css('background-color', '#49ff28');
 		}
-		else if(progress>'40%'){
-			$(this).css('background-color','yellow');
+		else if(prog_val > 40){
+			$(this).css('background-color', 'yellow');
 		}
 		else{
-			$(this).css('background-color','red');
+			$(this).css('background-color', 'red');
 		}
 
 	});
