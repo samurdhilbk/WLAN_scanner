@@ -1,6 +1,7 @@
-#!C:\Python27\python.exe
+#!C:\Python27\python.exe -u
 
 #This shebang reflects the location of the python.exe file. Change it appropriately if the corresponding location is different in your computer
+#The -u option runs the Python interpreter in unbuffered mode
 
 print "Content-type: text/html"
 print

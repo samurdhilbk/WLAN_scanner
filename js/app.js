@@ -17,12 +17,10 @@ $(document).ready(function(){
 	$("#accordion >li").accordion("option", "active", 0 );
 
 	$("#collapse").click(function(){
-		console.log("clicked");
 		$("#accordion >li").accordion("option", "active", false );
 	});
 
 	$("#expand").click(function(){
-		console.log("clicked");
 		$("#accordion >li").accordion("option", "active", 0 );
 	});
 
